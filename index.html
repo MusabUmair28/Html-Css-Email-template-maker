@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Template Maker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Email Template Maker</h1>
+
+        <div class="form-container">
+            <label for="header-text">Header Text:</label>
+            <input type="text" id="header-text" placeholder="Enter header text">
+
+            <label for="body-text">Body Text:</label>
+            <textarea id="body-text" placeholder="Enter body text"></textarea>
+
+            <label for="background-color">Background Color:</label>
+            <select id="background-color">
+                <option value="#ffffff">White</option>
+                <option value="#f7f7f7">Light Grey</option>
+                <option value="#f0f8ff">Alice Blue</option>
+                <option value="#faebd7">Antique White</option>
+                <option value="#e6e6fa">Lavender</option>
+                <option value="#fff0f5">Lavender Blush</option>
+                <option value="#f5f5dc">Beige</option>
+                <option value="#add8e6">Light Blue</option>
+            </select>
+
+            <label for="font-color">Font Color:</label>
+            <select id="font-color">
+                <option value="#333333">Black</option>
+                <option value="#ffffff">White</option>
+                <option value="#0000ff">Blue</option>
+                <option value="#ff6347">Tomato</option>
+                <option value="#32cd32">Lime Green</option>
+                <option value="#800080">Purple</option>
+                <option value="#ff4500">Orange Red</option>
+                <option value="#ff1493">Deep Pink</option>
+            </select>
+
+            <label for="font-family">Font Family:</label>
+            <select id="font-family">
+                <option value="Arial, sans-serif">Arial</option>
+                <option value="Georgia, serif">Georgia</option>
+                <option value="Times New Roman, Times, serif">Times New Roman</option>
+                <option value="Courier New, Courier, monospace">Courier New</option>
+            </select>
+
+            <label for="image-upload">Upload Background Image (optional):</label>
+            <input type="file" id="image-upload" accept="image/*">
+
+            <button id="generate-template">Generate Template</button>
+            <button id="download-template" style="display:none;">Download Template</button>
+        </div>
+
+        <div class="template-preview">
+            <h2>Template Preview</h2>
+            <div id="email-template" class="email-template">
+                <h1 id="template-header">Header</h1>
+                <p id="template-body">This is the body of the email</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
